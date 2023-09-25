@@ -12,4 +12,11 @@ public class Lap {
         return leiras;
     }
 
+    @Override
+    public String toString() {
+        return leiras;
+    }
+    
+    
+
 }

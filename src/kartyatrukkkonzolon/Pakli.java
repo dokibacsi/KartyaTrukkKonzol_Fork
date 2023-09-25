@@ -16,7 +16,7 @@ public class Pakli {
         int i = 1;
         for (String szin : szinek) {
             for (int e = 0; e < ertekek.length && i < pakli.length; e++) {
-                pakli[i++] = new Lap (szin + "_" + ertekek[e]);
+                pakli[i++] = new Lap(szin + "_" + ertekek[e]);
             }
         }
 
