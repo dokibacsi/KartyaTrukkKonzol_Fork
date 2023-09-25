@@ -1,6 +1,7 @@
-package kartyatrukkkonzolon;
+package nezet;
 
 import java.util.Scanner;
+import modell.Pakli;
 
 public class KartyaTrukk {
     
