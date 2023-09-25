@@ -1,22 +1,33 @@
 package nezet;
 
 import java.util.Scanner;
+import modell.Lap;
 import modell.Pakli;
 
 public class KartyaTrukk {
-    
+
     private final Scanner sc = new Scanner(System.in);
     Pakli pkl;
- 
+
     public KartyaTrukk() {
         pkl = new Pakli();
         for (int i = 0; i < 3; i++) {
-            pkl.kirak();
+            kirak();
             int oszlop = melyik();
             pkl.kever(oszlop);
         }
-        pkl.ezVolt();
-        
+        ezVolt();
+
+    }
+
+    public void kirak() {
+        Lap[] pakliTomb = this.pkl.getPakli();
+        for (int i = 1; i < pakliTomb.length; i++) {
+            System.out.printf("%-8s", pakliTomb[i]);
+            if (i % 3 == 0) {
+                System.out.println("");
+            }
+        }
     }
 
     private int melyik() {
@@ -28,6 +39,10 @@ public class KartyaTrukk {
             jo = oszlop >= 1 && oszlop <= 3;
         } while (!jo);
         return oszlop;
+    }
+
+    public void ezVolt() {
+        System.out.println("A választott lap: " + pkl.getPakli()[11]);
     }
 
 }
