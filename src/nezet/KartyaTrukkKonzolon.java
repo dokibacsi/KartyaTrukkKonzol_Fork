@@ -4,12 +4,12 @@ import java.util.Scanner;
 import modell.Lap;
 import modell.Pakli;
 
-public class KartyaTrukk {
+public class KartyaTrukkKonzolon {
 
     private final Scanner sc = new Scanner(System.in);
     Pakli pkl;
 
-    public KartyaTrukk() {
+    public KartyaTrukkKonzolon() {
         pkl = new Pakli();
         for (int i = 0; i < 3; i++) {
             kirak();

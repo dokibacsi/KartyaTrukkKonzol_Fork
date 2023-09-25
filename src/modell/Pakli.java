@@ -13,8 +13,6 @@ public class Pakli {
         return pakli;
     }
     
-    
-    
     private void feltolt() {
         pakli = new Lap[22];
         String[] szinek = {"P", "T", "Z", "M"};

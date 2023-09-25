@@ -1,10 +1,10 @@
 package main;
 
-import nezet.KartyaTrukk;
+import nezet.KartyaTrukkKonzolon;
 
 public class Program {
 
     public static void main(String[] args) {
-        new KartyaTrukk();
+        new KartyaTrukkKonzolon();
     }
 }
